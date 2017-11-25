@@ -3,7 +3,10 @@ Automate running scripts when pentesting
 	
 In beta 1, we only support the function of running SQLMap automatically</br>		
 To get a best experience, we suggest you save all the url that you want to exploit into a textual file like `**.txt`</br>
-By default, we provide some useful options for SQLMap's running. Also, you can provide your wanted options in belows format.	
+By default, we provide some useful options for SQLMap's running. </br>
+(Default argument:)
+`python sqlmap.py -u "target url" --threads=10 --tamper=randomcomments --random-agent --level=5`	</br>
+Also, you can provide your wanted options in belows format.	
 	
 
 	http://www.xxx.com/123.php?XXXXX --*options1||options2||……||optionsn*--
