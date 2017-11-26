@@ -28,8 +28,9 @@ if __name__ == '__main__':
 					sqlmap_url_list.append(url)
 				#read urls, and output for commandlins's
 				for i in sqlmap_url_list: 
-					output_commands = 'python sqlmap.py -u ' + i + '--threads=10 --tamper=randomcomments --random-agent --level=5'
+					output_commands = r'python sqlmap.py -u ' + i + r' --threads=10 --tamper=randomcomments --random-agent --level=5'
 					process = subprocess.Popen(output_commands, stdin=subprocess.PIPE, 	stdout= subprocess.PIPE, stderr= subprocess.PIPE, shell= False)
-					print process.stdout.read()
+					while process.poll() == None:
+						print process.stdout.readline()
 	except Exception as e:
 		print e
