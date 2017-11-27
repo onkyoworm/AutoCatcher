@@ -1,7 +1,8 @@
 # AutoCatcher
 Automate running scripts when pentesting
 	
-In beta 1, we only support the function of running SQLMap automatically</br>		
+In beta 1, we only support the function of running SQLMap automatically</br>
+And now only for windows plotform</br>		
 To get a best experience, we suggest you save all the url that you want to exploit into a textual file like `**.txt`</br>
 By default, we provide some useful options for SQLMap's running. </br>
 (Default argument:)
